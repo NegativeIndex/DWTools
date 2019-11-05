@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# save the names of the foles we are interested to a file; 
+# then generate a tar ball based on the file
+find 0[34]* -name "*py*" > fname.txt
+find 0[34]* -name "*dat*" >> fname.txt
+tar -cvf data.tar -T fname.txt
+

@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+# remove the directory structure in the tar ball
+tar -czf RData1.tar.gz --transform=s'!^.*/!!' A*[01]/RawData/*txt
+echo "20% finished"
+
+tar -czf RData2.tar.gz --transform=s'!^.*/!!' A*[23]/RawData/*txt
+echo "40% finished"
+
+tar -czf RData3.tar.gz --transform=s'!^.*/!!' A*[45]/RawData/*txt
+echo "60% finished"
+
+tar -czf RData4.tar.gz --transform=s'!^.*/!!' A*[67]/RawData/*txt
+echo "80% finished"
+
+tar -czf RData5.tar.gz --transform=s'!^.*/!!' A*[89]/RawData/*txt
+echo "100% finished"
