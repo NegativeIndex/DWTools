@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+echo "Create ~/bin/generate idle-nodes-plus"
+ln -s ~/python-study/DWTools/idle_nodes_plus.py ~/bin/idle-nodes-plus
